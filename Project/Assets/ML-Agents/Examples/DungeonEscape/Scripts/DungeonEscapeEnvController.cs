@@ -229,7 +229,7 @@ public class DungeonEscapeEnvController : MonoBehaviour
             var rot = UseRandomAgentRotation ? GetRandomRot() : item.StartingRot;
 
             item.Agent.transform.SetPositionAndRotation(pos, rot);
-            item.Rb.velocity = Vector3.zero;
+            item.Rb.linearVelocity = Vector3.zero;
             item.Rb.angularVelocity = Vector3.zero;
             item.Agent.MyKey.SetActive(false);
             item.Agent.IHaveAKey = false;
