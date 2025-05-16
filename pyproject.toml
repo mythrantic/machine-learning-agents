@@ -1,10 +1,16 @@
 [project]
-name = "mlagents"
+name = "machine-learning-agents"
 version = "0.1.0"
-description = "Add your description here"
+description = "a place to play with machine learning agents in UNITY"
 readme = "README.md"
 requires-python = ">=3.10.12"
 dependencies = [
+    "mlagents",
+    "mlagents-envs",
     "numpy==1.23.5",
     "torch~=2.2.1",
 ]
+
+[tool.uv.sources]
+mlagents-envs = { path = "ml-agents-envs" }
+mlagents = { path = "ml-agents" }
